@@ -1,0 +1,24 @@
+{
+	"degrees": [
+		{
+			"name": "Manchester Community College",
+			"major": "General Studies",
+			"degree type": "Associate of Arts",
+			"year completed": 2007
+			},
+	
+		{
+
+			"name": "Central Connecticut State University",
+			"major": "Statistics",
+			"degree type": "Bachelor of Arts",
+			"year completed": 2014
+			},
+		{
+			"name": "Boston University",
+			"major": "Computer Information Sytstems",
+			"degree type": "Master of Science",
+			"year completed": 2020
+		}
+	]
+}
