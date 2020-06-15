@@ -4,7 +4,7 @@
 var httpRequest;
 document.getElementById('btn').addEventListener("click", button_click_event)
 function button_click_event(){
-	makeRequest("https://github.com/stmarple/stmarple.github.io/schools.json");
+	makeRequest("https://stmarple.github.io/schools.json");
 };
 
 function makeRequest(url) {
