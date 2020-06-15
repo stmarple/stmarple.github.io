@@ -30,10 +30,7 @@ function alertContents(){
 
 			var newContent = '';
 			for (var i = 0; i < responseObject.degrees.length; i++) {
-				newContent +=   `<div class="event">;
-								<p> responseObject.degrees[i].name </p>
-								</div>
-								`
+				newContent +=   '<div class="event"><p>' + responseObject.degrees[i].name + '</p></div>'
 				}
 		}
 		else{
