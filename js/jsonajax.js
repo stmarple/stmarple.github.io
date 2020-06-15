@@ -6,7 +6,7 @@
 		var httpRequest;
 		document.getElementById("btn").onclick = function() 
 		{
-		makeRequest("https://github.com/stmarple/colleges/blob/master/schools.json");
+		makeRequest("https://github.com/stmarple/stmarple.github.io/schools.json");
 		};
 
 		function makeRequest(url) {
