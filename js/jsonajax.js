@@ -28,10 +28,11 @@
 				responseObject = JSON.parse(httpRequest.responseText);
 
 				var newContent = '';
-				for (var i = 0 < responseObject.degrees.length; i++) {
+				for (var i = 0; i < responseObject.degrees.length; i++) {
 					newContent =   `<div class="event">;
 									<p> responseObject.degrees[i].name </p>
-									</div>`
+									</div>
+									`
 					}
 			}
 			else{
@@ -45,6 +46,6 @@
 
 document.getElementById('btn').addEventListener("click", button_click_event)
 function button_click_event(){
-	document.getElementById('demo').innerHTML = "Here's your sign..."
+	document.getElementById('demo').innerHTML = ""
 }
 
