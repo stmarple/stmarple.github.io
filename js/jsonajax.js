@@ -28,6 +28,18 @@ function alertContents(){
 
 			responseObject = JSON.parse(httpRequest.responseText);
 
+			var attrlist = ['name', 'major','degree type','year completed']
+			var tbl = document.getElementById('tbl');
+			var th = '';
+
+			for (var i = 0; i < attrlist.length; i++) {
+				th += '<th>' + attrlist[i] + '</th>'
+			}
+
+			var tr = document.createElement("tr");
+			tr.innerHTML = th;
+			tbl.appendChild(tr);
+
 			var newContent = '';
 			for (var i = 0; i < responseObject.degrees.length; i++) {
 				newContent +=   '<div class="event"><p>' + responseObject.degrees[i].name + '</p></div>'
