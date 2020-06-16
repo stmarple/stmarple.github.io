@@ -42,8 +42,17 @@ function alertContents(){
 
 			var newContent = '';
 			for (var i = 0; i < responseObject.degrees.length; i++) {
-				newContent +=   '<div class="event"><p>' + responseObject.degrees[i].name + '</p></div>'
+			//	newContent +=   '<div class="event"><p>' + responseObject.degrees[i].name + '</p></div>'
+				
+				var tr = document.createElement("tr");
+				var td = '';
+
+				for (var j = 0; j < attrlist.length; j++) {
+					td += '<td>' + responseObject.degrees[i][attrlist[j]] + '</td>'
 				}
+				tr.innerHTML = td;
+				tbl.appendChild(tr);
+			}
 		}
 		else{
 			alert('There was a problem with the request.');
