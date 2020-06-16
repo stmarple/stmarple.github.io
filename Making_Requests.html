@@ -4,7 +4,16 @@
 <head>    
 	<title>Let's Learn Ajax</title>   
  <meta charset="utf-8">    
- <style>        
+ <style>  
+
+ 	html{
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: 100%;
+	}
+ 	.requests{
+ 		background-image: url('https://cdn.vox-cdn.com/thumbor/T15bBP2WOyYK6XVJ3T7J_CQBxzs=/0x0:995x664/920x613/filters:focal(419x253:577x411):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61632045/BANNER_Data_Sciences_Center_View_From_Kilachand_Center.0.jpg');
+ 	}      
  	button {            
  		font-family: 'Helvetica', 'Arial', sans-serif;            
  		font-size: 1.2em;            
@@ -14,13 +23,33 @@
  		padding: 5px;        
  	} 
  	table#tbl{
-	border: 2px solid black;
+ 		 font-family: Arial, Helvetica, sans-serif;
+ 		font-size: 25px;
+ 		background-color: cornsilk;
+		border: 2px solid black;
+		margin-top: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+	}
+	th{
+		text-transform: uppercase;
+		background-color: lightsteelblue;
+		color: white;
+		background-color: darkred;
+		border: 1px solid black;
+		padding: 15px;
+	}
+	td{
+		color: black;
+		border: 1px solid black;
+		padding: 15px;
 	}  
  	button:hover {
 	color: black;	
 	background-color: yellow;
 	font-weight: bold;
-} 
+	} 
  </style>    
  </head>
  <body>    
@@ -30,10 +59,10 @@
  	<section>    
  		<h2>Server Response</h2>        
  		<button id="btn">Load Degree Data</button> 
+ 		<!-- create a place for the "new content" to go once the JavaScript updates the page -->
  		<p id="content">   </p>
- 		<table id="tbl">
-
- 		</table>
+ 		<!-- Create an empty table for the new content to go into -->
+ 		<table id="tbl">	</table>
  	</section>    
  	<footer>        
  		<p>© 2018 Joe Terrier</p>    
