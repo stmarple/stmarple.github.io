@@ -109,7 +109,7 @@ var app = new Vue(	{
 
 
 
-var skills_url = "https://smarple.github.io/skills.json"
+var skills_url = "https://smarple.github.io/project/skills.json"
 document.getElementById('btn-right').addEventListener("click", button_click_event)
 document.getElementById('btn-left').addEventListener("click", button_click_event)
 
@@ -150,7 +150,7 @@ function fetchdata(leftright) {
       		populate_div(leftright, data);
       
     	} else {
-      		alert("Unable to fetch URL: " + skils_url + ": " + httpRequest.status)
+      		alert("Unable to fetch URL: " + skills_url + ": " + httpRequest.status)
     	}
     }
 	httpRequest.open('GET', skills_url, true);
