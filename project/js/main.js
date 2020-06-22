@@ -5,7 +5,7 @@
 // This Vue component is a single photo component.  Having a cart object / cart method here would make no sense, since
 // the cart object would just be repeating itself over and over and each photo would have its own cart.  Thus, the cart
 // would be best served in the global Vue instance below **
-/*
+
 Vue.component('photo', {
 	template: `
 		<div class="photo">
@@ -105,7 +105,7 @@ Vue.component('photo', {
 var app = new Vue(	{
 	el:'#app',  // attach instance of Vue to the DOM
 })
-*/
+
 
 
 
