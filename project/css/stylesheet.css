@@ -62,7 +62,14 @@ figcaption#family-pic_cpn{
 .skills-bg {
 	background-image: url('../images/ireland.jpg');
 }
-button.training{
+
+.container { height: auto; overflow: hidden; }
+.left { width: 50%; float: left; }
+.right { margin-left: 65%; }
+.clear { float: clear; }
+
+
+#btn-right{
 	position: fixed;
 	font-family: 'Helvetica', 'Arial', sans-serif;            
 	font-size: 25px;  
@@ -73,34 +80,30 @@ button.training{
 	background-color: darkblue;            
 	padding: 5px; 	
 	border: 3px solid black;
+	/*margin-left: 50px;*/
 }
-button.training:hover{
+#btn-right:hover{
 	color: black;
 	background-color: lightblue;
 }
-#btn_school{
-	margin-left: 50px;
-}
-#btn_job{
-	margin-left: 1250px;
-}
-
-.skills_tbl{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 25px;
-	background-color: cornsilk;
-	border: 2px solid black;
-	margin-top: 50px;
-	padding: 10px;
+#btn-left{
 	position: fixed;
+	font-family: 'Helvetica', 'Arial', sans-serif;            
+	font-size: 25px;  
+	font-weight: bold;  
+	width: 300px;        
+	color: white;            
+	border-radius: 5px;            
+	background-color: darkblue;            
+	padding: 5px; 	
+	border: 3px solid black;
+	/*margin-left: 1000px;*/
 }
-table#tbl_school{
-	margin-left: 50px;
+#btn-left:hover{
+	color: black;
+	background-color: lightblue;
+}
 
-}
-table#tbl_job{
-	margin-left: 1250px;
-}
 th{
 	text-transform: uppercase;
 	background-color: lightsteelblue;

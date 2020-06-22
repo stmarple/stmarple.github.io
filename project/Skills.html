@@ -23,17 +23,18 @@
 			Skills
 		</h2>
 
-		<div>
-			<button class="training" id="btn_school"> Through School </button> 
-	 		<p id="content1">   </p> <!-- create a place for the "new content" to go once the JavaScript updates the page -->
-	 		<table class='skills_tbl' id="tbl_school">	</table><!-- Create an empty table for the new content to go into -->
+		<div class="container"><!-- always a good practice to have a container div --> 
+    		<div class="spanall" id="btnbox"><!-- this is your top box, maybe put the buttons here -->
+	    		<button class="right" id="btn-right">School Skills</button>	
+				<button class="left" id="btn-left">Job Skills</button>
+    		</div>
+
+			<div class="clear"><!-- clear your float --></div>
+	    	<div id="table-left" class="left"></div>
+	    	<div id="table-right" class="right"></div>
+    	
 		</div>
 
-		<div>
-			<button class="training" id="btn_job"> On the Job Training </button> 
-	 		<p id="content2">   </p> <!-- create a place for the "new content" to go once the JavaScript updates the page -->
-	 		<table class='skills_tbl' id="tbl_job">	</table><!-- Create an empty table for the new content to go into -->
-		</div>	
 
 		<figure>	
 			<img id="truck" src="images/trucks.jpg" alt="I Love My Trucks" class="center" />
