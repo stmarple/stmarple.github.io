@@ -109,7 +109,7 @@ var app = new Vue(	{
 
 
 
-var skills_url = "https://smarple.github.io/project/Skills.json"
+var skills_url = "https://stmarple.github.io/project/data/skills.json"
 document.getElementById('btn-right').addEventListener("click", button_click_event)
 document.getElementById('btn-left').addEventListener("click", button_click_event)
 
