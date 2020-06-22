@@ -109,9 +109,9 @@ var app = new Vue(	{
 
 
 
-var skills_url = "https://stmarple.github.io/project/data/skills.json"
-document.getElementById('btn-right').addEventListener("click", button_click_event)
-document.getElementById('btn-left').addEventListener("click", button_click_event)
+var skills_url = "https://stmarple.github.io/project/data/skills.json";
+document.getElementById('btn-right').addEventListener("click", button_click_event);
+document.getElementById('btn-left').addEventListener("click", button_click_event);
 
 function button_click_event(event) {
   switch(event.currentTarget.id) {
