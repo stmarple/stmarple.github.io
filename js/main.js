@@ -111,11 +111,16 @@ var app = new Vue(	{
 // AJAX
 var httpRequest;
 
-// event handler for button, 'btn'
-document.getElementById('btn_school').addEventListener("click", button_click_event)
-function button_click_event(){
-	makeRequest("https://stmarple.github.io/project/skills.json");
+// event handlers for buttons   SIMPLIFY??
+document.getElementById("btn-right").addEventListener("click", button_click_event)
+document.getElementById("btn-left").addEventListener("click", button_click_event)
+
+function school_button_click_event(){
+	makeRequest("https://stmarple.github.io/data/skills.json");
 };
+
+
+
 
 // Code to create a request to get JSON information on github accout
 function makeRequest(url) {
@@ -133,37 +138,25 @@ function alertContents(){
 	if(httpRequest.readyState == XMLHttpRequest.DONE) { 
 		if (httpRequest.status === 200){
 
-			responseObject = JSON.parse(httpRequest.responseText); 
+			responseObject = JSON.parse(httpRequest.responseText);
 
-			// Create resulting table
-			// attribute list includes all column headers, which are attributes in JSON file
+			// Create resulting list
+			var tbl = document.getElementById('table-left');
+			var ul = document.createElement('ul');
 
-			var attrlist = ['location', 'skill'] 
-			var tbl = document.getElementById('tbl_school');
-			var th = '';                               // initialize table header
+			data["school"].map(function iter_schools( e ){
+			    var li = document.createElement('li').innerText(e)
+			    ul.appendChild(li);
+			});
 
-			// Create table headers by looping through the attribute list
-			for (var i = 0; i < attrlist.length; i++) {
-				th += '<th>' + attrlist[i] + '</th>'  
-			}
+			var tbl = document.getElementById('table-right');
+			var ul = document.createElement('ul');
 
-			// Create table rows
-			var tr = document.createElement("tr");
-			tr.innerHTML = th;
-			tbl.appendChild(tr);
+			data["job"].map(function iter_jobs( e ){
+			    var li = document.createElement('li').innerText(e)
+			    ul.appendChild(li);
+			});
 
-			var newContent = '';                                         // initialize variable
-			for (var i = 0; i < responseObject.degrees.length; i++) {
-				var tr = document.createElement("tr");                  // reassign var tr for every loop pass
-				var td = '';                                           // (re)initialize table data variable
-
-				// for each degree, add table data for all of its attributes
-				for (var j = 0; j < attrlist.length; j++) {
-					td += '<td>' + responseObject.degrees[i][attrlist[j]] + '</td>'
-				}
-				tr.innerHTML = td;
-				tbl.appendChild(tr);
-			}
 		}
 		else{
 			alert('There was a problem with the request.');
