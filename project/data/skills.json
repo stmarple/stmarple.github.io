@@ -1,6 +1,5 @@
-"data": [
-	{
-	"school": [ "Python", "SAS Enterprise Guide"] ,
-	"job": ["VBA","SAS JMP"]
-	}
-]
+
+{
+"school": [ "Python", "SAS Enterprise Guide"] ,
+"job": ["VBA","SAS JMP"]
+}
