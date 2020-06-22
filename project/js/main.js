@@ -146,11 +146,13 @@ function fetchdata(leftright) {
 					data = responseObject['school'];
 				break;      
 			}
-	  
+			console.log(httpRequest.responseText);
+			console.log(responseObject);
+			console.log(data);
       		populate_div(leftright, data);
       
     	} else {
-      		alert("Unable to fetch URL: " + skills_url + ": " + httpRequest.status)
+      		console.log("Unable to fetch URL: " + skills_url + ": " + httpRequest.status)
     	}
     }
 	httpRequest.open('GET', skills_url, true);
