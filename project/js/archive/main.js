@@ -108,72 +108,58 @@ var app = new Vue(	{
 
 
 
-
-var skills_url = "https://smarple.github.io/skills.json"
-document.getElementById('btn-right').addEventListener("click", button_click_event)
-document.getElementById('btn-left').addEventListener("click", button_click_event)
-
-function button_click_event(event) {
-  switch(event.currentTarget.id) {
-    case "btn-left":
-      fetchdata("table-left");
-      break;
-    case "btn-right":
-      fetchdata("table-right");
-      break;
-  }
-}
-
-
 // AJAX
-function fetchdata(leftright) {
-  
+function fetchdata(datasrc) {
 	httpRequest = new XMLHttpRequest();  // Create XMLHttpRequest object
 
 	if (!httpRequest) {
 		alert('Exiting : Cannot create an XMLHTTP Instance');
 		return false;
 	}
-	httpRequest.onreadystatechange = function httpreq_callback() {
-    	if(httpRequest.readyState == XMLHttpRequest.DONE && httpRequest.status === 200) {
-			responseObject = JSON.parse(httpRequest.responseText);
-
-			switch(leftright) {
-				case "table-left":
-					data = responseObject['job'];
-				break;
-				case "table-right":
-					data = responseObject['school'];
-				break;      
-			}
-	  
-      		populate_div(leftright, data);
-      
-    	} else {
-      		alert("Unable to fetch URL: " + skils_url + ": " + httpRequest.status)
-    	}
-    }
-	httpRequest.open('GET', skills_url, true);
+	httpRequest.onreadystatechange = httpRequest_callback;
+	httpRequest.open('GET', datasrc, true);
 	httpRequest.send();
+    
+    return json_object;
+}
+
+function httpRequest_callback(){
+	if(httpRequest.readyState == XMLHttpRequest.DONE) { 
+		alert(httpRequest.status)
+
+		if (httpRequest.status === 200){
+			alert(httpRequest.responseText);
+			responseObject = JSON.parse(httpRequest.responseText);
 }
 
 
+function populate_div(leftright) {
+  var data = {};
+  var header = [];
 
-function populate_div(leftright, data) {
+  switch(leftright) {
+      case "table-left":
+          data = fetchdata("https://smarple.github.io/skills.json")['school'];
+          header = [..];
+      case "table-right":
+           data = fetchdata("https://smarple.github.io/skills.json")['job'];
+           header = […];
+  }
      
   /* construct HTML/DOM objects here */   
-  
   //var frag =document.createDocumentFragment(); // use fragment to avoid redraw
   var ul = document.createElement('ul');
 
   /* loop through the dataset */
   data.map(function iter_data(data_e) { 
     
-    /* remember data_e is a value, scaler   */
+    /* data_e is a value, scaler   */
     var li = document.createElement('li').innerText(data_e)
     ul.appendChild(li);
 
   });
+  //Put Humpty Dumpty back together again
   //frag.appendChild('ul')
   document.getElementById(leftright).appendChild(ul);
 }
+
