@@ -66,11 +66,9 @@ figcaption#family-pic_cpn{
 .container { height: auto; overflow: hidden; }
 .left { width: 50%; float: left; }
 .right { margin-left: 65%; }
-.clear { float: clear; }
 
 
 #btn-right{
-	position: fixed;
 	font-family: 'Helvetica', 'Arial', sans-serif;            
 	font-size: 25px;  
 	font-weight: bold;  
@@ -87,7 +85,6 @@ figcaption#family-pic_cpn{
 	background-color: lightblue;
 }
 #btn-left{
-	position: fixed;
 	font-family: 'Helvetica', 'Arial', sans-serif;            
 	font-size: 25px;  
 	font-weight: bold;  
@@ -103,6 +100,7 @@ figcaption#family-pic_cpn{
 	color: black;
 	background-color: lightblue;
 }
+
 
 th{
 	text-transform: uppercase;
