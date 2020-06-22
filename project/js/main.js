@@ -162,7 +162,10 @@ function fetchdata(leftright) {
 
 
 function populate_div(leftright, data) {
-     
+   console.log(leftright);
+   console.log(data);
+   document.getElementById(leftright).innerHTML = ''; // clear before appending
+
   /* construct HTML/DOM objects here */   
   
   //var frag =document.createDocumentFragment(); // use fragment to avoid redraw
