@@ -1,0 +1,13 @@
+{
+	"skills": [
+		{
+			"location": "On the Job",
+			"skill": "VBA"
+		},
+	
+		{
+			"location": "In School",
+			"skill": "Python"
+		}
+	]
+}
