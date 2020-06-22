@@ -170,7 +170,7 @@ function populate_div(leftright, data) {
   data.map(function iter_data(data_e) { 
     
     /* remember data_e is a value, scaler   */
-    var li = document.createElement('li').innerText(data_e);
+    var li = document.createElement('li').innerText = data_e;
     ul.appendChild(li);
 
   });
