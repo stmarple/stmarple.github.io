@@ -1,0 +1,264 @@
+
+
+
+html{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}	
+
+.home-bg {
+	padding-top: 400px;
+	background-image: url(http://www.coolupon.com/wp-content/uploads/2017/12/beautiful-natural-green-wallpapers-2.jpg);
+}
+
+.about-bg {
+	padding-top: 50px;
+		background-image: url(https://s3-production.bobvila.com/slides/30540/original/Landscaping_Around_Trees_with_Flowerbeds.jpg?1551937796);
+}
+.anecdote-bg{
+	background-image: url('../images/this_is_ireland.jpg');
+}
+.family-bg{
+	background-image: url('../images/ireland2.jpg');
+	background-position: relative;
+	background-color: lightyellow;
+	box-sizing: border-box;
+}
+/* Some family-bg styling over next 5 sections*/
+.photo-image{
+	width: 100%;
+}
+.family-photos {
+	width: 600px;
+	height: 40px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	padding-left: 10px;
+}
+.family-photos:hover{
+	font-weight: bolder;
+	font-size: 35px;
+
+}
+.photo-info{
+	margin-top: 20px;
+	margin-left: 1000px;
+	width: 600px;
+	background-color: beige;
+}
+
+figure#family-pic{
+	width: 675px;	
+	float: left;
+	margin-right: auto;	
+}
+figcaption#family-pic_cpn{
+	font-size: 20px;
+	background-color: tan;
+}
+
+.skills-bg {
+	background-image: url('../images/ireland.jpg');
+}
+button.training{
+	position: fixed;
+	font-family: 'Helvetica', 'Arial', sans-serif;            
+	font-size: 25px;  
+	font-weight: bold;  
+	width: 300px;        
+	color: white;            
+	border-radius: 5px;            
+	background-color: darkblue;            
+	padding: 5px; 	
+	border: 3px solid black;
+}
+button.training:hover{
+	color: black;
+	background-color: lightblue;
+}
+#btn_school{
+	margin-left: 50px;
+}
+#btn_job{
+	margin-left: 1250px;
+}
+
+.skills_tbl{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	background-color: cornsilk;
+	border: 2px solid black;
+	margin-top: 50px;
+	padding: 10px;
+	position: fixed;
+}
+table#tbl_school{
+	margin-left: 50px;
+
+}
+table#tbl_job{
+	margin-left: 1250px;
+}
+th{
+	text-transform: uppercase;
+	background-color: lightsteelblue;
+	color: white;
+	background-color: gray;
+	border: 1px solid black;
+	padding: 15px;
+}
+td{
+	color: black;
+	border: 1px solid black;
+	padding: 15px;
+} 
+nav ul{
+	list-style-type: none;
+	margin: 10px;
+	padding: 10px;
+	overflow: hidden;
+	background-color: gray;
+}
+
+nav li a{
+	float: left;
+	display: block;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-right: 1px solid #333;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+nav li a#back{
+	background-color: yellow;
+	color: black;
+}
+nav li a#back:hover{
+	background-color: lightgreen;
+	color: black;
+}
+nav li a:hover{
+	background-color: lightgreen;
+	color: black;
+}
+h1{
+	font-size: 400%;	
+}
+h1#home{
+	font-size: 400%;	
+	color: black;
+	background-image: linear-gradient(to right, darkgray,silver,yellow,green,blue);
+}
+h2:hover{
+	background-color: darkgray;
+	color: black;
+}
+h2{
+	width: 20%;
+	font-size: 300%;
+	font-weight: bold;
+	color: white;
+	border-style: solid;
+	background-color: black;
+}
+h2#anecdote{
+	width: 100%;
+	font-size: 300%;
+	font-weight: bold;
+	color: black;
+	background-color: white;
+}
+h2#family_life{
+	width: 80%;
+	font-size: 200%;
+	font-weight: bold;
+	color: black;
+	background-color: transparent;
+	border-color: transparent;
+}
+#pic{
+	width: auto;
+	height: 500px;
+	border: solid 2px white;	
+}
+ul#about{
+	display: inline-flex;
+	overflow: hidden;
+	font-size: 200%;
+	background-image: linear-gradient(to right, pink,plum,silver,yellow,lightgreen,lightblue);
+	width: 100%;
+	color: midnightblue;
+	padding: 10px;
+}
+.about_links{
+	padding-right: 200px; 
+}
+
+article#anecdote{
+	background-color: lightyellow;
+	font-size: 20px;
+	padding: 10px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#tractor{
+	width: 600px;
+    height: 600px;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	animation-name: animation;
+	animation-delay: 5s;
+    animation-duration: 20s;
+}
+
+@keyframes animation {
+	0%   {left:0%; top:0%;}
+	25%  {left:30%; top:0px;}
+	50% {left:30%; top:0px;}
+	75% {left:30%; top:0px;}
+	100% {left:0%; top:0px;}
+}
+figure#tractor{
+	width: 500px;
+	height: auto;
+	border: 15px solid saddlebrown;
+}
+figcaption#tractor {
+	padding: 5px;
+	background-color: burlywood;
+	font-weight: bold;
+	font-size: 25px;
+}
+img#johnDeere{
+	width: 500px;
+	height: auto;
+}
+
+img#truck {
+	position: relative;
+	border-style: double solid;
+	border-color: black;
+	border-width: 25px 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+figcaption#truck {
+	color: white;
+	font-weight: bold;
+	font-size: 200%;
+}
