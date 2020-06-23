@@ -63,11 +63,18 @@ figcaption#family-pic_cpn{
 	background-image: url('../images/ireland.jpg');
 }
 
-.container { height: auto; overflow: hidden; }
-.left { width: 50%; float: left; }
-.right { margin-left: 65%; }
-
-
+.container { 
+	height: auto;
+	overflow: hidden; 
+}
+.left {
+	width: 50%; 
+	float: left;
+}
+.right { 
+	margin-left: 65%; 
+	position: fixed;
+}
 #btn-right{
 	font-family: 'Helvetica', 'Arial', sans-serif;            
 	font-size: 25px;  
@@ -78,7 +85,6 @@ figcaption#family-pic_cpn{
 	background-color: darkblue;            
 	padding: 5px; 	
 	border: 3px solid black;
-	/*margin-left: 50px;*/
 }
 #btn-right:hover{
 	color: black;
@@ -94,33 +100,55 @@ figcaption#family-pic_cpn{
 	background-color: darkblue;            
 	padding: 5px; 	
 	border: 3px solid black;
-	/*margin-left: 1000px;*/
 }
 #btn-left:hover{
 	color: black;
 	background-color: lightblue;
 }
 
-
-th{
-	text-transform: uppercase;
-	background-color: lightsteelblue;
-	color: white;
-	background-color: gray;
-	border: 1px solid black;
-	padding: 15px;
+#table-left{
+	background-color: bisque;
+	font-size: 26px;
+	text-align: left;
+	width: 26%;
 }
-td{
-	color: black;
-	border: 1px solid black;
-	padding: 15px;
-} 
+#table-right{
+	background-color: bisque;
+	font-size: 26px;
+	text-align: left;
+}
+#truck-fig{
+	position: fixed;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+img#truck {
+	position: fixed;
+	border-style: double solid;
+	border-color: black;
+	border-width: 25px 15px;
+	display: block;
+	margin-left: 30%;
+	margin-right: auto;
+	width: 25%;
+}
+figcaption#truck {
+	position: fixed;
+	color: white;
+	font-weight: bold;
+	font-size: 200%;
+	margin-top: 200px;
+	margin-left: 200px;
+}
+
 nav ul{
 	list-style-type: none;
 	margin: 10px;
 	padding: 10px;
 	overflow: hidden;
 	background-color: gray;
+	border: 2px solid black;
 }
 
 nav li a{
@@ -158,6 +186,12 @@ h1#home{
 	color: black;
 	background-image: linear-gradient(to right, darkgray,silver,yellow,green,blue);
 }
+h1#skills{
+	background-color: lightblue;
+	border:3px solid black;
+	padding-left: 10px;
+	width: 50%;
+}
 h2:hover{
 	background-color: darkgray;
 	color: black;
@@ -169,6 +203,7 @@ h2{
 	color: white;
 	border-style: solid;
 	background-color: black;
+	padding-left: 5px;
 }
 h2#anecdote{
 	width: 100%;
@@ -235,7 +270,8 @@ section#tractor{
 figure#tractor{
 	width: 500px;
 	height: auto;
-	border: 15px solid saddlebrown;
+	border: 3px solid white;
+
 }
 figcaption#tractor {
 	padding: 5px;
@@ -248,18 +284,3 @@ img#johnDeere{
 	height: auto;
 }
 
-img#truck {
-	position: relative;
-	border-style: double solid;
-	border-color: black;
-	border-width: 25px 15px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 25%;
-}
-figcaption#truck {
-	color: white;
-	font-weight: bold;
-	font-size: 200%;
-}

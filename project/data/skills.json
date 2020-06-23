@@ -1,5 +1,30 @@
 
 {
-"school": [ "Python", "SAS Enterprise Guide"] ,
-"job": ["VBA","SAS JMP"]
+	"school": [ 
+		"Python 3.7", 
+		"SAS Enterprise Guide",
+		"R",
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"Vue",
+		"Spark",
+		"Scala",
+		"MongoDb",
+		"TensorFlow",
+		"PostGreSql",
+		"Microsoft SQL",
+		"WEKA"
+	] ,
+	"job": [
+		"VBA",
+		"SAS JMP",
+		"Oracle SQL",
+		"Python 3.6",
+		"Microsoft Office",
+		"Microsoft Visio",
+		"R Markdown",
+		"Hive",
+		"QLIK Sense"
+	]
 }
