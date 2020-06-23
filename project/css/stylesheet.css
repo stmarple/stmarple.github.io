@@ -21,7 +21,6 @@ html{
 }
 .family-bg{
 	background-image: url('../images/ireland2.jpg');
-	background-position: relative;
 	background-color: lightyellow;
 	box-sizing: border-box;
 }
@@ -70,9 +69,10 @@ figcaption#family-pic_cpn{
 .left {
 	width: 50%; 
 	float: left;
+	border-radius: 5px;
 }
 .right { 
-	margin-left: 65%; 
+	margin-left: 60%; 
 	position: fixed;
 }
 #btn-right{
@@ -139,7 +139,7 @@ figcaption#truck {
 	font-weight: bold;
 	font-size: 200%;
 	margin-top: 200px;
-	margin-left: 200px;
+	margin-left: 250px;
 }
 
 nav ul{
@@ -247,7 +247,7 @@ article#anecdote{
 	margin-right: auto;
 }
 
-section#tractor{
+section#tractor_move{
 	width: 600px;
     height: 600px;
 	position: relative;
@@ -273,7 +273,13 @@ figure#tractor{
 	border: 3px solid white;
 
 }
-figcaption#tractor {
+#tractor-heading{
+	font-size: 26px;
+	width: 100%;
+	padding: 5px;
+	color: lightgray;
+}
+#tractor-figCaption {
 	padding: 5px;
 	background-color: burlywood;
 	font-weight: bold;
